@@ -1,14 +1,21 @@
+// Задача № 2
 
-function makeOrderMessage(orderedQuantity, pricePerDroid, deliveryFee) {
-  // Change code below this line
-const totalPrice = (orderedQuantity * pricePerDroid) + deliveryFee;
-    const message = `You ordered droids worth ${totalPrice} credits. Delivery ${deliveryFee} is included in total price.`;
+// Given the triangle of consecutive odd numbers:
 
-  // Change code above this line
-  return message;
+//  1
+//           3     5
+//        7     9    11
+//    13    15    17    19
+// 21    23    25    27    29
+// ...
+
+// Calculate the sum of the numbers in the nth row of this triangle(starting at index 1) e.g.: (Input-- > Output)
+
+// 1 -->  1
+// 2 --> 3 + 5 = 8
+
+function rowSumOddNumbers(n) {
+	return Math.pow(n, 3)
 }
 
-// makeOrderMessage(4, 500, 100);
-
-console.log(makeOrderMessage);
-
+console.log(rowSumOddNumbers(6))
