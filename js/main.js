@@ -14,8 +14,25 @@
 // 1 -->  1
 // 2 --> 3 + 5 = 8
 
-function rowSumOddNumbers(n) {
-	return Math.pow(n, 3)
+// function rowSumOddNumbers(n) {
+// 	return Math.pow(n, 3)
+// }
+
+// console.log(rowSumOddNumbers(6))
+
+let sum = 0;
+
+function calculateTotal(number) {
+ // Change code below this line
+for( let i = 0; i <= number; i += 1) {
+	
+	sum += i;
+	
+}
+	return sum;
+  // Change code above this line
 }
 
-console.log(rowSumOddNumbers(6))
+// console.log(calculateTotal(24));
+
+console.log(calculateTotal(10));
